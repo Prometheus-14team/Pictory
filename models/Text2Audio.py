@@ -26,3 +26,7 @@ class Text2Audio:
        # save the best audio sample (index 0) as a .wav file
         scipy.io.wavfile.write("14teams_output.wav", rate=16000, data=audio[0])
         print(f"{file_name}로 오디오 파일이 저장")
+
+
+##
+print("")
