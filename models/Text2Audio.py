@@ -19,6 +19,7 @@ class Text2Audio:
             prompt,
             num_inference_steps=num_inference_steps,
             audio_length_in_s=audio_length_in_s,
+            generator=generator,
             # num_waveforms_per_prompt=3,
         ).audios
         
@@ -26,7 +27,3 @@ class Text2Audio:
        # save the best audio sample (index 0) as a .wav file
         scipy.io.wavfile.write("14teams_output.wav", rate=16000, data=audio[0])
         print(f"{file_name}로 오디오 파일이 저장")
-
-
-##
-print("")
