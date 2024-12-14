@@ -1,5 +1,4 @@
 import torch
-from PIL import Image
 from diffusers import (
     ControlNetModel, 
     StableDiffusionControlNetPipeline, 
@@ -18,7 +17,9 @@ class ControlNet():
         # load model and pipeline
         controlnet = ControlNetModel.from_pretrained(controlnet_path)
         self.pipe = StableDiffusionControlNetPipeline.from_pretrained(
-            diffusion_path, controlnet=controlnet)
+            diffusion_path, 
+            controlnet=controlnet
+        )
         self.pipe.scheduler = UniPCMultistepScheduler.from_config(self.pipe.scheduler.config)
 
         # set device
@@ -32,5 +33,9 @@ class ControlNet():
         num_inference_steps -> int
 
         """
-        output = self.pipe(prompt, img, num_inference_steps=num_inference_steps).images[0]
+        output = self.pipe(
+            prompt, 
+            img, 
+            num_inference_steps=num_inference_steps
+        ).images[0]
         return output   # PIL.Image.Image
