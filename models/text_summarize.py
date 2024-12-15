@@ -2,14 +2,18 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 
 class Summarizer():
-    def __init__(self, model_name="psyche/KoT5-summarization"):
+    def __init__(self, model_name="psyche/KoT5-summarization", device="cpu"):
         # 모델과 토크나이저 초기화
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
+        # device setting
+        self.model.to(device)
+
     def summarize(self, text, max_length=30, min_length=10):
         # 입력 데이터 준비
-        inputs = self.tokenizer(text, return_tensors="pt")
+        inputs = self.tokenizer(
+            text, return_tensors="pt").to(self.model.device)
         
         # 모델을 이용해 요약 생성
         outputs = self.model.generate(
