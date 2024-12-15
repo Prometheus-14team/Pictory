@@ -21,7 +21,7 @@ def parse_args():
 
     # model setting
     parser.add_argument("--summarizer", default="psyche/KoT5-summarization", type=str)
-    parser.add_argument("--controlnet", default="unsloth/Qwen2.5-7B-Instruct", type=str)
+    parser.add_argument("--controlnet", default="lllyasviel/sd-controlnet-scribble", type=str)
     parser.add_argument("--diffusion", default="runwayml/stable-diffusion-v1-5", type=str)
     parser.add_argument("--audio_ldm", default="cvssp/audioldm2-large", type=str)
 
@@ -75,7 +75,7 @@ def main():
     # save files
     os.makedirs(args.output_dir, exist_ok=True)
     img.save(os.path.join(args.output_dir, "image.png"))
-    scipy.io.wavfile.write(os.path.join(args.output_dir, "audio.wav"), rate=16000, data=audio[0])
+    scipy.io.wavfile.write(os.path.join(args.output_dir, "audio.wav"), rate=16000, data=audio)
 
     print("Saved Files!")
 
