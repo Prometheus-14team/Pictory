@@ -15,10 +15,13 @@ class ControlNet():
 
         """
         # load model and pipeline
-        controlnet = ControlNetModel.from_pretrained(controlnet_path)
+        controlnet = ControlNetModel.from_pretrained(
+            controlnet_path,
+            torch_dtype=torch.bfloat16)
         self.pipe = StableDiffusionControlNetPipeline.from_pretrained(
             diffusion_path, 
-            controlnet=controlnet
+            controlnet=controlnet,
+            torch_dtype=torch.bfloat16
         )
         self.pipe.scheduler = UniPCMultistepScheduler.from_config(self.pipe.scheduler.config)
 
