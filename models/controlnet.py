@@ -26,7 +26,7 @@ class ControlNet():
         self.pipe.to(device)
 
     @torch.no_grad()
-    def generate(self, img, prompt="transfer to scribble style.", num_inference_steps=20):
+    def generate(self, img, prompt="transfer to a child drwaing with pastel color.", num_inference_steps=20):
         """
         img -> PIL.Image.Image
         prompt -> str
