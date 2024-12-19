@@ -1,1 +1,1 @@
-# Picory
+# Pictory
