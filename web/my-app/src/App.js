@@ -11,7 +11,7 @@ function App() {
       <div className="app">
         {/* 전역 네비게이션 바 */}
         <header>
-          <h1>My Website</h1>
+          <h1></h1>
         </header>
 
         {/* 페이지 라우팅 */}
@@ -19,7 +19,7 @@ function App() {
           <Routes>
           
             <Route path = "/" element = {<Home />} />
-            <Route path = "./pages/Calendar" element = {<CalendarPage />} />
+            <Route path = "/calendar" element = {<CalendarPage />} />
               
           </Routes>
         </main>
