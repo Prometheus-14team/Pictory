@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 import '../assets/styles.css';
 import Group17Image from '../assets/images/Group 17.png';
@@ -29,21 +28,13 @@ function Home() {
         <div className="text3">
           매 순간의 이야기를 고유한 작품으로 담아내는 당신만의 일기장 Pictory,<br /><br /><br />
           창의적 대화를 통해 매일의 기억을 예술로 탄생시키는 특별한 여정에 여러분을 초대합니다!
-          <Link to="/calendar">Start here</Link>
+          <div className="label">
+        <div className="text-wrapper"><Link to="/calendar">Start here</Link></div>
+        </div>
         </div>
       </div>
-=======
-import aa from '../assets/images/aa.png';  // 이미지 불러오기
-
-function Home() {
-  return (
-    <div>
-      <h2>Welcome to the Home Page</h2>
-      <p>This is the home page content.</p>
-      <img src={'/assets/images/aa.png'} alt="My Image" className="aa" /> 
->>>>>>> 2e5042935a1a5b2234a9eee4f3978fc033fd0b2a
     </div>
-  );
-}
+  );}
+
 
 export default Home;

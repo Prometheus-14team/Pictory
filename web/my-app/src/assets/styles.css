@@ -84,6 +84,21 @@
   width: 80%;
   z-index: 3;
 }
+.label {
+  height: 96px;
+  width: 330px;
+}
+.label .text-wrapper {
+  color: #ffbf27;
+  font-family: "Poppins-ExtraBold", Helvetica;
+  font-size: 64px;
+  font-weight: 800;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  top: 0;
+}
 .calendar {
     border: 1px solid #ccc;
     border-radius: 8px;
