@@ -1,5 +1,5 @@
-// src/pages/Home.jsx
 import React from 'react';
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 import '../assets/styles.css';
 import Group17Image from '../assets/images/Group 17.png';
@@ -32,6 +32,16 @@ function Home() {
           <Link to="/calendar">Start here</Link>
         </div>
       </div>
+=======
+import aa from '../assets/images/aa.png';  // 이미지 불러오기
+
+function Home() {
+  return (
+    <div>
+      <h2>Welcome to the Home Page</h2>
+      <p>This is the home page content.</p>
+      <img src={'/assets/images/aa.png'} alt="My Image" className="aa" /> 
+>>>>>>> 2e5042935a1a5b2234a9eee4f3978fc033fd0b2a
     </div>
   );
 }
