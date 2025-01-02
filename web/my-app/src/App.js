@@ -19,7 +19,7 @@ function App() {
           <Routes>
           
             <Route path = "/" element = {<Home />} />
-            <Route path = "./pages/Calendar" element = {<CalendarPage />} />
+            <Route path = "/calendar" element = {<CalendarPage />} />
               
           </Routes>
         </main>
