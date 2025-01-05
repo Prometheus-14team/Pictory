@@ -128,21 +128,20 @@
 
 .intro {
   display: flex;
-  justify-content: center;
   background-color: #ffffff;
-  width: 100%;
-  max-width: 1200px;
-  padding: 20px;
+  max-width: 100vw;
+  padding: 0;
   box-sizing: border-box;
   font-family: Pretendard Regular;
-  height: 100%;
+  height: 100vh;
   margin: 0;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .intro .jung {
   left: 50%;
   position: absolute;
-  top: 376px;
   transform: translateX(-50%);
 }
 
@@ -152,31 +151,32 @@
     rgb(255, 245, 220) 68%,
     rgb(255, 255, 255) 100%
   );
-  height: 2088px;
+  height: calc(99vw * (2088 / 1920));
   left: 50%;
   position: absolute;
-  top: 874px;
-  width: 1920px;
+  top: 115.7vh;
+  width: 99vw;
   transform: translateX(-50%);
 }
 
 .intro .ellipse {
   background-color: #fff5dc;
-  border-radius: 1059px;
-  height: 2118px;
-  left: 50%;
+  border-radius: 50%;
+  width: 109.21vw;
   position: absolute;
-  top: 0;
-  width: 2118px;
+  left: 50%;
+  top: 34.8vh;
+  height: 109.21vw;
   transform: translateX(-50%);
+  box-sizing: border-box;
 }
 
 .intro .group {
-  height: 228px;
-  left: 50%;
   position: absolute;
-  top: 24px;
-  width: 1363px;
+  width: 70.99vw;
+  height: 21.07vh;
+  left: 50%;
+  top: 36.9vh;
   transform: translateX(-50%);
 }
 
@@ -189,38 +189,37 @@
 }
 
 .intro .group-2 {
-  height: 731px;
-  left: 631px;
   position: absolute;
-  top: 81px;
-  width: 789px;
+  width: 38vw;
+  left: 7vw;
+  top: 45.8vh;
 }
 
 .intro .vector {
-  height: 88px;
-  left: 762px;
   position: absolute;
-  top: 224px;
-  width: 46px;
+  width: 2.37vw;
+  height: 8.1vh;
+  left: 13.1vw;
+  top: 55.6vh;
 }
 
 .intro .flexcontainer {
-  gap: 30px;
-  height: 680px;
+  flex-direction: column;
   position: absolute;
-  top: 929px;
-  width: 1676px;
-  transform: translateX(-50%);
+  gap: 2.78vh;
+  height: 16.94vh;
+  top: 120.9vh;
+  width: 87.4vw;
+  left: 50%;
 }
 
 .intro .text {
   align-self: stretch;
   color: #000000;
   font-family: "Pretendard-SemiBold", Helvetica;
-  font-size: 34px;
+  font-size: 1.3vw;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: normal;
   position: relative;
   text-align: center;
   transform: translateX(-50%);
@@ -229,7 +228,6 @@
 .intro .span {
   color: #000000;
   font-family: "Pretendard-SemiBold", Helvetica;
-  font-size: 34px;
   font-weight: 600;
   letter-spacing: 0;
 }
@@ -250,58 +248,51 @@
   width: 786px;
 }
 
-.intro .div {
-  align-items: flex-start;
+.intro .flexcontainer2 {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  height: 183px;
-  left: 554px;
+  gap: 1.56vw;
+  height: 16.94vh;
   position: absolute;
-  top: 2201px;
-  width: 1676px;
+  top: 238.7vh;
+  width: 87.4vw;
+  left: 50%;  
 }
-
-.intro .start-here-instance {
-  left: 1278px !important;
-  position: absolute !important;
-  top: 2694px !important;
-}
-
 .intro .group-5 {
-  height: 79px;
-  left: 1212px;
+  width: 4.37vw;
   position: absolute;
-  top: 2638px;
-  width: 84px;
+  left: 38.7vw;
+  right: 56.94vw;
+  top: 287.07vh;
+  bottom: -186.41vh;  
 }
 
 .intro .vector-2 {
-  height: 57px;
-  left: 1571px;
+  height: 5.28vh;
+  left: 53.91vw;
   position: absolute;
-  top: 2756px;
-  width: 59px;
+  top: 297.74vh;
+  width: 3.07vw;  
 }
 
 .intro .text-wrapper-2 {
   color: #ffbf27;
-  font-family: "FONTSPRING DEMO - Lufga ExtraBold-Regular", Helvetica;
-  font-size: 64px;
+  font-family: "Lufga ExtraBold", Helvetica;
+  font-size: 3.33vw;
   font-weight: 400;
-  left: 292px;
+  left: 13.4vw;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 291px;
+  top: 27vh;
 }
 
 .intro .group-6 {
-  height: 199px;
-  left: 1515px;
+  width: 10.94vw;
+  height: 18.4vh;
+  left: 79vw;
+  top: 15.5vh;
   position: absolute;
-  top: 168px;
-  width: 210px;
 }
 
 .icon-pencil {
@@ -309,40 +300,38 @@
   position: relative;
   width: 688px;
 }
-
-.icon-pencil .vector {
-  height: 520px;
-  left: 76px;
-  position: absolute;
-  top: 81px;
-  width: 535px;
-}
 .box {
-  width: 955.94px;
-  height: 905px;
-  top: 2196.22px;
-  left: -241.31px;
+  position: absolute;
+  width: 49.79vw;
+  top: 95.35vh;
+  left: -28.57vw;
   gap: 0px;
-  opacity: 0.6px;  
-}
-.pencil{
-  height: 688px;
-  width: 688px;
-}
-.pencil .vector{
-  height: 520px;
-  left: 1417px;
-  top: 1760px;
-  width: 535px;
+  bottom: -187.15vh;
+  opacity: 0.6;  
+  transform: rotate(-0.79deg);
 }
 .smile{
-  width: 732.6px;
-  height: 369.18px;
+  position: absolute;
+  left: -11.62vw;
+  right: 61.22vw;
+  top: 215.56vh;
+  bottom: -154.74vh;
 }
-.smile .vector{
-  top: 2382px;
-  left: 11.96px;
-  gap: 0px;
-  border: 29px 0px 0px 0px;
-  opacity: 0.6px;  
+.pencil{
+  position: absolute;
+  width: 28.67vw;
+  height: 51.04vh;
+  left: 62.06vw;
+  top: 158.37vh;
+}
+.text-wrapper{
+  position: absolute;
+  width: 16.04vw;
+  height: 7.78vh;
+  left: 42.14vw;
+  top: 292.72vh;
+  font-size: 2.6vw;
+  color: #FFC027;
+  font-weight: 800;
+  font-family: 'Poppins';
 }
