@@ -1,0 +1,27 @@
+<h1>Pictory</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <th>일</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <th>토</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for week in range(4) %}
+        <tr>
+            {% for day in range(7) %}
+            {% set date = '2024-12-' + ("%02d" % (week * 7 + day + 1)) %}
+            <td>
+                <a href="/diary/{{ date }}">{{ date }}</a><br>
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+

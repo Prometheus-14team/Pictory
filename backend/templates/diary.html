@@ -1,0 +1,14 @@
+<h1>{{ date }} 그림 일기</h1>
+<form action="/diary/{{ date }}/write" method="post">
+    <textarea name="content" rows="10" cols="50" placeholder="일기를 입력해주세요.">{{ content }}</textarea><br>
+    <button type="submit">저장</button>
+</form>
+<form action="/diary/{{ date }}/delete" method="post">
+    <button type="submit">삭제</button>
+</form>    
+</form>
+<form action="/diary/{{ date }}/create" method="post">
+    <button type="submit">이미지 및 오디오 생성</button>
+</form>    
+<a href="/">캘린더로 돌아가기</a>
+
