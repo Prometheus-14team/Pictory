@@ -2,6 +2,10 @@ import torch
 from diffusers import AudioLDM2Pipeline
 
 
+AUDIO_PROMPT = ""
+AUDIO_NEGATIVE_PROMPT = ""
+
+
 class Text2Audio():
     def __init__(self, model_name="cvssp/audioldm2-large", device="cpu"):
         # 모델 초기화

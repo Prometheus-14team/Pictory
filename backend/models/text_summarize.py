@@ -1,5 +1,6 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from konlpy.tag import Okt
 
 
 class Summarizer():
@@ -34,3 +35,9 @@ class Summarizer():
             skip_special_tokens=True
         )
         return summary
+
+
+def stemmer(sentence):
+    okt = Okt()  
+    nouns = okt.nouns(sentence)  
+    return nouns

@@ -6,6 +6,10 @@ from diffusers import (
 )
 
 
+IMAGE_PROMPT = ""
+IMAGE_NEGATIVE_PROMPT = ""
+
+
 class ControlNet():
     def __init__(self, controlnet_path, diffusion_path="runwayml/stable-diffusion-v1-5", device="cpu"):
         """
