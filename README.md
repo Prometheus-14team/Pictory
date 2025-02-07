@@ -56,8 +56,8 @@ python app.py
 
 ## 🔑 데이터셋
 
-| **Coloring & Edge Dataset**[[link]](https://huggingface.co/datasets/Dohyeon1/Pictory-ControlNet-RawDataset-Crayon) | **Children Sketch Dataset**[[link]](https://cybertron.cg.tu-berlin.de/eitz/projects/classifysketch/) | **Summarization & Translation Dataset**[[link]](https://huggingface.co/datasets/traintogpb/aihub-flores-koen-integrated-prime-small-30k)[[link]](https://huggingface.co/datasets/daekeun-ml/naver-news-summarization-ko) | :----------------------:|
-|:----------------------:|:----------------------:|
+| **Coloring & Edge Dataset**[[link]](https://huggingface.co/datasets/Dohyeon1/Pictory-ControlNet-RawDataset-Crayon) | **Children Sketch Dataset**[[link]](https://cybertron.cg.tu-berlin.de/eitz/projects/classifysketch/) | **Summarization & Translation Dataset**[[link]](https://huggingface.co/datasets/traintogpb/aihub-flores-koen-integrated-prime-small-30k)[[link]](https://huggingface.co/datasets/daekeun-ml/naver-news-summarization-ko) |
+|:----------------------:|:----------------------:|:----------------------:|
 | <img src="images/coloring_dataset.png"> | <img src="images/sketch_dataset.png"> | <img src="images/text_dataset.png"> |
 
 ### 
