@@ -36,7 +36,7 @@
 
 ```bash
 conda create -n pictory python=3.12.8
-conda activate picotry
+conda activate pictory
 ```
 
 #### 2. 필요 라이브러리 설치
