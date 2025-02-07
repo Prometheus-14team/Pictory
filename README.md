@@ -74,13 +74,13 @@ python app.py
 
 ### Okt + fastText
 
-<img src="images/fasttext.png" width="70%"> <br>
+<img src="images/fasttext.png" width="60%"> <br>
 
 일기 내용을 기반으로 태그를 추천하기 위해서 [Okt](https://konlpy.org/ko/latest/api/konlpy.tag/#okt-class)와 [fastText](https://fasttext.cc/)를 활용였습니다. Okt를 통해 일기의 내용에서 명사만 추출한 후 저장되어 있는 태그를 매핑하여 사용자에게 제공하고, 꼭 매핑되지 않더라도 fastText를 통해서 비슷한 태그를 추천하여 사용자에게 제공해줍니다.
 
 ### Gemma 2 2B
 
-<img src="images/gemma2.png" width="70%"> <br>
+<img src="images/gemma2.png" width="60%"> <br>
 
 일기의 요약 및 번역 태스크를 수행하기 위한 LLM으로 [Gemma 2 2B](https://huggingface.co/google/gemma-2-2b-it)
 을 선정하였습니다. Summarization & Translation Dataset을 활용하여 LoRA 기법으로 모델을 파인튜닝한 후 프롬프팅 기술까지 적용하여, 모델이 일기를 효과적으로 요약하고 번역할 수 있도록 하였습니다. <br>
