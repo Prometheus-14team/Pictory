@@ -36,6 +36,27 @@ pip install -r requirements.txt
 
 ---
 
+## ⚡️ 데모 웹사이트
+
+```bash
+cd backend
+python app.py
+```
+
+---
+
+## 📊 데이터셋
+
+### Coloring & Edge Dataset
+
+
+### Children Sketch Dataset
+
+
+### Summarization & Translation Dataset
+
+---
+
 ## 🚀 모델 선정 및 학습
 
 ### Okt + fastText
