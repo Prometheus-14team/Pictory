@@ -40,11 +40,25 @@ pip install -r requirements.txt
 
 #### 1. Okt & fastText
 
+<p align="center">
+  <img src="images/Okt.png" width="45%">
+  <img src="images/fastText.png" width="45%">
+</p>
+
 #### 2. Gemma 2 2B
+
+<img src="images/gemma.png" width="75%">
 
 #### 3. AudioLDM2
 
+<img src="images/audioldm2.png" width="75%">
+
 #### 4. Stable Diffusion v1.5 + ControlNet
+
+<p align="center">
+  <img src="images/stable_diffusion.png" width="55%">
+  <img src="images/controlnet.png" width="35%">
+</p>
 
 ---
 
