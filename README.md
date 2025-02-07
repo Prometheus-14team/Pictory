@@ -38,25 +38,26 @@ pip install -r requirements.txt
 
 ## 🚀 모델 선정 및 학습
 
-### [Okt](https://konlpy.org/ko/latest/api/konlpy.tag/#okt-class) + [fastText](https://fasttext.cc/)
+### Okt + fastText
 
 <img src="images/fasttext.png" width="70%"> <br>
 
-일기 내용을 기반으로 태그를 추천하기 위해서 Okt와 fastText를 활용였습니다. Okt를 통해 일기의 내용에서 명사만 추출한 후 저장되어 있는 태그를 매핑하여 사용자에게 제공하고, 꼭 매핑되지 않더라도 fastText를 통해서 비슷한 태그를 추천하여 사용자에게 제공해줍니다.
+일기 내용을 기반으로 태그를 추천하기 위해서 [Okt](https://konlpy.org/ko/latest/api/konlpy.tag/#okt-class)와 [fastText](https://fasttext.cc/)를 활용였습니다. Okt를 통해 일기의 내용에서 명사만 추출한 후 저장되어 있는 태그를 매핑하여 사용자에게 제공하고, 꼭 매핑되지 않더라도 fastText를 통해서 비슷한 태그를 추천하여 사용자에게 제공해줍니다.
 
-### [Gemma 2 2B](https://huggingface.co/google/gemma-2-2b-it)
+### Gemma 2 2B
 
 <img src="images/gemma2.png" width="70%"> <br>
 
-일기의 요약 및 번역 태스크를 수행하기 위한 LLM으로 Gemma 2 2B을 선정하였습니다. Summarization & Translation Dataset을 활용하여 LoRA 기법으로 모델을 파인튜닝한 후 프롬프팅 기술까지 적용하여, 모델이 일기를 효과적으로 요약하고 번역할 수 있도록 하였습니다.
+일기의 요약 및 번역 태스크를 수행하기 위한 LLM으로 [Gemma 2 2B](https://huggingface.co/google/gemma-2-2b-it)
+을 선정하였습니다. Summarization & Translation Dataset을 활용하여 LoRA 기법으로 모델을 파인튜닝한 후 프롬프팅 기술까지 적용하여, 모델이 일기를 효과적으로 요약하고 번역할 수 있도록 하였습니다.
 
-### [AudioLDM2](https://huggingface.co/cvssp/audioldm2-large)
+### AudioLDM2
 
 <img src="images/audioldm2.png" width="70%"> <br>
 
-일기의 내용에 맞는 배경음악을 생성하는 모델로 AudioLDM2을 선정하였고, 해당 모델은 텍스트 프롬프트를 입력받아 텍스트에 맞는 음악을 생성하는 구조를 가지고 있습니다. 사전 학습된 모델을 불러온 후 따로 추가적인 학습은 진행하지 않았고, 프롬프팅 기술만을 적용하였습니다.
+일기의 내용에 맞는 배경음악을 생성하는 모델로 [AudioLDM2](https://huggingface.co/cvssp/audioldm2-large)을 선정하였고, 해당 모델은 텍스트 프롬프트를 입력받아 텍스트에 맞는 음악을 생성하는 구조를 가지고 있습니다. 사전 학습된 모델을 불러온 후 따로 추가적인 학습은 진행하지 않았고, 프롬프팅 기술만을 적용하였습니다.
 
-### [Stable Diffusion v1.5](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5) + [ControlNet](https://huggingface.co/lllyasviel/sd-controlnet-scribble)
+### Stable Diffusion v1.5 + ControlNet
 
 <p align="left">
   <img src="images/stable_diffusion.png" width="45%">
@@ -64,7 +65,7 @@ pip install -r requirements.txt
 </p>
 <br>
 
-사용자가 만들어 낸 스케치를 채색해주는 모델로 Stable Diffusion을 선정하였고 이미지 인풋에 대한 컨디션을 조금 더 효과적으로 주기 위해서 ControlNet을 붙여서 사용하였습니다. Coloring & Edge Dataset을 활용하여 ControlNet 부분을 LoRA 기법으로 파인튜닝을 진행한 후 프롬프팅 기술까지 적용하여, 스케치를 그림일기의 느낌에 맞게 채색할 수 있도록 만들었습니다.
+사용자가 만들어 낸 스케치를 채색해주는 모델로 [Stable Diffusion v1.5](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5)을 선정하였고 이미지 인풋에 대한 컨디션을 조금 더 효과적으로 주기 위해서 [ControlNet](https://huggingface.co/lllyasviel/sd-controlnet-scribble)을 붙여서 사용하였습니다. Coloring & Edge Dataset을 활용하여 ControlNet 부분을 LoRA 기법으로 파인튜닝을 진행한 후 프롬프팅 기술까지 적용하여, 스케치를 그림일기의 느낌에 맞게 채색할 수 있도록 만들었습니다.
 
 ---
 
