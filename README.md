@@ -18,7 +18,7 @@
 
 ---
 
-## 🔥 주요 기능
+## 📌 주요 기능
 
 <img src="images/feature_overview.png" width="50%"> <br>
 
