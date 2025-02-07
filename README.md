@@ -63,7 +63,6 @@ pip install -r requirements.txt
   <img src="images/stable_diffusion.png" width="45%">
   <img src="images/controlnet.png" width="25%">
 </p>
-<br>
 
 사용자가 만들어 낸 스케치를 채색해주는 모델로 [Stable Diffusion v1.5](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5)을 선정하였고 이미지 인풋에 대한 컨디션을 조금 더 효과적으로 주기 위해서 [ControlNet](https://huggingface.co/lllyasviel/sd-controlnet-scribble)을 붙여서 사용하였습니다. Coloring & Edge Dataset을 활용하여 ControlNet 부분을 LoRA 기법으로 파인튜닝을 진행한 후 프롬프팅 기술까지 적용하여, 스케치를 그림일기의 느낌에 맞게 채색할 수 있도록 만들었습니다.
 
@@ -73,7 +72,7 @@ pip install -r requirements.txt
 
 <img src="images/service_architecture.png" width="70%"> <br>
 
-### AI: `Python`, `PyTorch` | Frontend: `React` | Backend: `Flask`, `MySQL`
+#### AI: `Python`, `PyTorch` | Frontend: `React` | Backend: `Flask`, `MySQL`
 
 ---
 
