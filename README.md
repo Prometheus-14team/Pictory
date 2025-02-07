@@ -110,9 +110,18 @@ python train/train_controlnet.py
 
 ---
 
-## 🛠️ 기술 스택
+## ⭐️ 서비스 구조도
 
 <img src="images/service_architecture.png" width="70%"> <br>
+
+
+---
+
+## 기술 스택
+
+- **AI: `Python`, `PyTorch`**
+- **Frontend: `React`**
+- **Backend: `Flask`, `MySQL`**
 
 ---
 
