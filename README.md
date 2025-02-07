@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 ---
 
-## ⚡️ 데모 웹사이트
+## 🎇 데모 웹사이트
 
 ```bash
 cd backend
