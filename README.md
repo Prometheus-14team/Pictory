@@ -69,13 +69,11 @@ pip install -r requirements.txt
 
 ---
 
-## 기술 스택
+## 🛠️ 기술 스택
 
 <img src="images/service_architecture.png" width="70%"> <br>
 
-- **AI**: `Python`, `PyTorch`
-- **Frontend**: `React`
-- **Backend**: `Flask`, `MySQL`
+### AI: `Python`, `PyTorch` | Frontend: `React` | Backend: `Flask`, `MySQL`
 
 ---
 
