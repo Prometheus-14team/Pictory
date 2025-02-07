@@ -70,7 +70,11 @@ python app.py
 <img src="images/gemma2.png" width="70%"> <br>
 
 일기의 요약 및 번역 태스크를 수행하기 위한 LLM으로 [Gemma 2 2B](https://huggingface.co/google/gemma-2-2b-it)
-을 선정하였습니다. Summarization & Translation Dataset을 활용하여 LoRA 기법으로 모델을 파인튜닝한 후 프롬프팅 기술까지 적용하여, 모델이 일기를 효과적으로 요약하고 번역할 수 있도록 하였습니다.
+을 선정하였습니다. Summarization & Translation Dataset을 활용하여 LoRA 기법으로 모델을 파인튜닝한 후 프롬프팅 기술까지 적용하여, 모델이 일기를 효과적으로 요약하고 번역할 수 있도록 하였습니다. <br>
+
+```bash
+python train/train_gemma2.py
+```
 
 ### AudioLDM2
 
@@ -85,7 +89,11 @@ python app.py
   <img src="images/controlnet.png" width="25%">
 </p>
 
-사용자가 만들어 낸 스케치를 채색해주는 모델로 [Stable Diffusion v1.5](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5)을 선정하였고 이미지 인풋에 대한 컨디션을 조금 더 효과적으로 주기 위해서 [ControlNet](https://huggingface.co/lllyasviel/sd-controlnet-scribble)을 붙여서 사용하였습니다. Coloring & Edge Dataset을 활용하여 ControlNet 부분을 LoRA 기법으로 파인튜닝을 진행한 후 프롬프팅 기술까지 적용하여, 스케치를 그림일기의 느낌에 맞게 채색할 수 있도록 만들었습니다.
+사용자가 만들어 낸 스케치를 채색해주는 모델로 [Stable Diffusion v1.5](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5)을 선정하였고 이미지 인풋에 대한 컨디션을 조금 더 효과적으로 주기 위해서 [ControlNet](https://huggingface.co/lllyasviel/sd-controlnet-scribble)을 붙여서 사용하였습니다. Coloring & Edge Dataset을 활용하여 ControlNet 부분을 LoRA 기법으로 파인튜닝을 진행한 후 프롬프팅 기술까지 적용하여, 스케치를 그림일기의 느낌에 맞게 채색할 수 있도록 만들었습니다. <br>
+
+```bash
+python train/train_controlnet.py
+```
 
 ---
 
