@@ -53,8 +53,8 @@ pip install -r requirements.txt
 #### 4. Stable Diffusion v1.5 + ControlNet
 
 <p align="left">
-  <img src="images/stable_diffusion.png" width="50%">
-  <img src="images/controlnet.png" width="20%">
+  <img src="images/stable_diffusion.png" width="40%">
+  <img src="images/controlnet.png" width="30%">
 </p>
 
 ---
