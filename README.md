@@ -20,7 +20,7 @@
 
 ## 🔥 주요 기능
 
-<img src="images/feature_overview.png" width="70%"> <br>
+<img src="images/feature_overview.png" width="50%"> <br>
 
 사용자가 일기를 작성하면, 작성된 내용을 분석하여 태그가 자동으로 생성됩니다. 태그를 클릭하면 해당 태그에 매핑된 스티커가 나오고, 이 스티커를 자유롭게 배치하고 크기를 조절하여 자신만의 스케치를 만들어 갈 수 있습니다. <br>
 
