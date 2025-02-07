@@ -9,7 +9,7 @@ AI 기반의 맞춤형 그림일기 서비스, **PICTORY**입니다. <br>
 
 ## 🔥 주요 기능
 
-<img src="images/feature_overview.png"> <br>
+<img src="images/feature_overview.png" width="100%"> <br>
 
 사용자가 일기를 작성하면, 작성된 내용을 분석하여 태그가 자동으로 생성됩니다. 태그를 클릭하면 해당 태그에 매핑된 스티커가 나오고, 이 스티커를 자유롭게 배치하고 크기를 조절하여 자신만의 스케치를 만들어 갈 수 있습니다. <br>
 
@@ -21,14 +21,14 @@ AI 기반의 맞춤형 그림일기 서비스, **PICTORY**입니다. <br>
 
 ## ⚙️ 개발환경 세팅
 
-#### 1️. 가상환경 생성
+#### 1. 가상환경 생성
 
 ```bash
 conda create -n pictory python=3.12.8
 conda activate picotry
 ```
 
-#### 2️. 필요 라이브러리 설치
+#### 2. 필요 라이브러리 설치
 
 ```bash
 pip install -r requirements.txt
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 ## 기술 스택
 
-<img src="images/service_architecture.png"> <br>
+<img src="images/service_architecture.png" width="100%"> <br>
 
 - **AI**: `Python`, `PyTorch`
 - **Frontend**: `React`
