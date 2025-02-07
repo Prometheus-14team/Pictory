@@ -56,7 +56,7 @@ python app.py
 
 ## 🔑 데이터셋
 
-| **Coloring & Edge Dataset** | **Children Sketch Dataset** | **Summarization & Translation Dataset** |
+| [Coloring & Edge Dataset](https://huggingface.co/datasets/Dohyeon1/Pictory-ControlNet-RawDataset-Crayon) | [Children Sketch Dataset](https://cybertron.cg.tu-berlin.de/eitz/projects/classifysketch/) | [Summarization & Translation Dataset](https://huggingface.co/datasets/traintogpb/aihub-flores-koen-integrated-prime-small-30k) |
 |:----------------------:|:----------------------:|:----------------------:|
 | <img src="images/coloring_dataset.png"> | <img src="images/sketch_dataset.png"> | <img src="images/text_dataset.png"> |
 
