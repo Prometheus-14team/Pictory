@@ -72,8 +72,6 @@ pip install -r requirements.txt
 
 <img src="images/service_architecture.png" width="70%"> <br>
 
-#### AI: `Python`, `PyTorch` | Frontend: `React` | Backend: `Flask`, `MySQL`
-
 ---
 
 ## 👩‍💻 팀원 및 역할
