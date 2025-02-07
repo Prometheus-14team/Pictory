@@ -58,7 +58,7 @@ python app.py
 
 | **Coloring & Edge Dataset** | **Children Sketch Dataset** | **Summarization & Translation Dataset** |
 |:----------------------:|:----------------------:|:----------------------:|
-| <img src="images/coloring_dataset.png" width="35%"> | <img src="images/sketch_dataset.png" width="35%"> | <img src="images/text_dataset.png" width="35%"|
+| <img src="images/coloring_dataset.png"> | <img src="images/sketch_dataset.png"> | <img src="images/text_dataset.png"> |
 
 ### 
 
